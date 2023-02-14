@@ -4,8 +4,14 @@ module.exports = {
     "./App.{js,jsx,ts,tsx}",
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
+  darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: '#09090a',
+        text: '#ddd'
+      }
+    },
   },
   plugins: [],
 }

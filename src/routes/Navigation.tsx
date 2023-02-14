@@ -8,7 +8,6 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import { Home } from '../screens/Home';
 import { Search } from '../screens/Search';
-import { Settings } from '../screens/Settings';
 import { Film } from '../screens/Film';
 
 const Tab = createBottomTabNavigator();
@@ -58,15 +57,6 @@ function MyTabs() {
           headerShown: false,
           tabBarIcon: ({ color, size }) => (
             <Feather name="search" size={24} color={color} />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="settings"
-        component={Settings}
-        options={{
-          tabBarIcon: ({ color, size }) => (
-            <Feather name="settings" size={24} color={color} />
           ),
         }}
       />

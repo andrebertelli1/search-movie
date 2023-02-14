@@ -4,10 +4,7 @@ import { ScrollView, SafeAreaView, View } from "react-native";
 import api from "../services/api";
 import { Card } from "../components/Card";
 
-import { List } from "../functions/List";
 import { useNavigation } from "@react-navigation/native";
-
-const lista = List(10)
 
 export function Search() {
   const navigation = useNavigation();
